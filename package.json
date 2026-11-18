@@ -1,0 +1,10 @@
+{
+  "name": "tiktok-koprusu",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "tiktok-live-connector": "^2.0.0",
+    "ws": "^8.18.0"
+  }
+}
