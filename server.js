@@ -19,7 +19,7 @@ const wss = new WebSocketServer({ server });
 const yolla = (o) => wss.clients.forEach(c => c.readyState === 1 && c.send(JSON.stringify(o)));
 
 function baglan() {
-  const tt = new TikTokLiveConnection(KULLANICI);
+  const tt = new TikTokLiveConnection(KULLANICI, {});
   tt.connect()
     .then(() => console.log('Yayina baglandi'))
     .catch((e) => {
